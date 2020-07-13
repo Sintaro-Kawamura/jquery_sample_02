@@ -1,7 +1,7 @@
 // Fade Sample ////////////
 $( function() {
 
-  $(".fade").fadeTo(0,0.2); // 初期状態 20%
+  $(".fade").fadeTo(0,0.0); // 初期状態 20%
 
   $(".fade").hover(
     function(){
@@ -21,5 +21,11 @@ $( function(){
   });
   $("#right").click( function(){
     $('#move').animate( { 'left': '+=200px' } , { 'duration': 1000 } );
+  });
+  $("#down").click( function(){
+    $('#move').animate( { 'top': '+=200px' } , { 'duration': 1000 } );
+  });
+   $("#up").click( function(){
+    $('#move').animate( { 'top': '-=200px' } , { 'duration': 1000 } );
   });
 });
